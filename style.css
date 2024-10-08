@@ -104,14 +104,58 @@ nav ul{
     }
 
 
-    .hero-title {
-        position: absolute; /* Position the title absolutely */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Offset to center the element */
-        color: #EFC2B3; /* Text color */
-        font-size: 3rem; /* Adjust as needed */
+    .text {
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        height: 100vh; /* Full viewport height */
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Space between elements */
         text-align: center; /* Center text alignment */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+        color: #EFC2B3; /* Text color for all text inside the container */
         z-index: 1; /* Ensure it's in front of the background */
+    }
+    
+    .hero-title1 {
+        font-size: 2rem; /* Adjust as needed */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+    }
+    .hero-title2 {
+        font-size: 4.5rem; /* Adjust as needed */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+    }
+    
+    /* Additional styles for <p> element */
+    .text p {
+        font-size: 1.5rem; /* Adjust the size as needed */
+        color: #EFC2B3; /* Ensure it matches the other text colors */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional shadow for visibility */
+    }
+
+    .btns{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .hero-btn{
+        background-color: #EFC2B3 ;
+        color: black;
+        padding: 20px;
+        width: 210px;
+        text-align: center;
+        gap: 20px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-family: 'Shrimp Sans Serif';
+    
+    }
+
+    .hero-btn:hover{
+        background-color: #f1ae9a ;
+        color: white;
+        transition: background-color 0.3s ease;
     }
