@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Shrimp Sans Serif';
+    src: url('fonts/shrimp-sans-serif.woff2') format('woff2'),
+         url('fonts/shrimp-sans-serif.woff') format('woff'),
+         url('fonts/shrimp-sans-serif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Shrimp Sans Serif', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav{
     background-color:#1A2456 ;
     padding: 0.5rem 1rem;
@@ -33,6 +60,9 @@ nav ul{
 
 .nav-links li{
     margin:0 15px ;
+    font-weight: 100;
+    position: relative;
+    font-size: 14px;
  }
 
     .nav-links li a{
