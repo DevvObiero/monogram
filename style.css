@@ -8,14 +8,26 @@
 }
 
 body {
-    font-family: 'Shrimp Sans Serif', sans-serif;
+    font-family: 'Shrimp Sans Serif',Roboto,sans-serif;
+    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp'); /* Set your background image */
+    height: 100vh; /* Full height */
+    background-size: 120%; 
+    background-position: center; /* Center the image */
+    background-size: cover;
+       
+    
 }
 
 
 
 
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 
 
 
@@ -27,12 +39,26 @@ body {
 
 nav{
     background-color:#1A2456 ;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
     align-items: center;
     justify-content: space-between;
     display: flex;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
+
+
+    /* position: absolute;  */
+    top: 0px; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    padding: 10px; /* Add padding */
+    z-index: 10;
+}
+
+
+nav:hover{
+    background-color: rgba(26, 36, 86, 0.8);
+    transition: background-color 0.3s ease;
 }
 
 nav ul{
@@ -49,6 +75,7 @@ nav ul{
     height: 38px;
     color:  #ff8b68;
     cursor: pointer;
+    transform: scale(1.01);
 }
 
 
@@ -74,4 +101,17 @@ nav ul{
     .nav-links li a:hover{
         color: #ff8b68 ;
         transition: color 0.3s ease;
+    }
+
+
+    .hero-title {
+        position: absolute; /* Position the title absolutely */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Offset to center the element */
+        color: #EFC2B3; /* Text color */
+        font-size: 3rem; /* Adjust as needed */
+        text-align: center; /* Center text alignment */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+        z-index: 1; /* Ensure it's in front of the background */
     }
