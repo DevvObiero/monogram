@@ -159,3 +159,26 @@ nav ul{
         color: white;
         transition: background-color 0.3s ease;
     }
+
+    .content{
+        color: aliceblue;
+        background-color: #1A2456;
+
+      
+    }
+
+    /* making the landing page text fade away on scroll */
+
+    .text{
+        opacity: 1;
+        transform: translateY(50px) scale(1);
+        transition: transform 2s, opacity 2s;  /*this makes it look like inatoka chini*/
+    }
+
+    .text.scrolled{
+        transform: translateY(-50px) scale(0.7);
+        opacity: 1;
+     
+    }
+
+   
