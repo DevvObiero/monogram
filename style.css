@@ -14,7 +14,7 @@ body {
     background-size: 120%; 
     background-position: center; /* Center the image */
     background-size: cover;
-       
+background-repeat: no-repeat;       
     
 }
 
