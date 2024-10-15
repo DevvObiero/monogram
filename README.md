@@ -48,9 +48,7 @@ This project is licensed under the MIT License.
 
 Acknowledgments
 Inspired by the original Monogram website.
-Thanks to [Insert Names/Resources] for their guidance and resources.
 Contact
 For questions or suggestions, feel free to reach out:
 
-Your Name: your.email@example.com
-GitHub: Your GitHub Profile
+Your Name: obieropauldev@gmail.com
