@@ -203,3 +203,43 @@ nav ul{
           transform: translateY(10px) translateX(-50%);
         }
       }
+
+
+
+
+.grid-container{
+display: grid;
+background: #EFC2B3;
+color:black;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+      }
+
+
+
+.grid_container > div {
+        background: teal;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid ; 
+      }
+      
+
+.img1{
+   
+}
+.picha1{
+    background-image: url("") ;
+}
+
+
+
+      .grid_container > div:nth-child(1){
+        grid-column: 1 / span 3;
+      }
+      
+      /* .grid_container > div:nth-child(5){
+        grid-column: span 3;
+      }  */
