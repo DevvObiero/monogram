@@ -7,19 +7,31 @@
     font-style: normal;
 }
 
-body {
+/* body {
     font-family: 'Shrimp Sans Serif',Roboto,sans-serif;
-    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp'); /* Set your background image */
-    height: 100vh; /* Full height */
+    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp'); 
+    height: 100vh; 
     background-size: 120%; 
-    background-position: center; /* Center the image */
+    background-position: center;
     background-size: cover;
     background-repeat:  no-repeat;
+    width: 100%;
    
 }
+ */
 
 
 
+
+ body {
+    font-family: 'Shrimp Sans Serif',Roboto,sans-serif;
+    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+}
 
 
 *{
@@ -45,14 +57,17 @@ nav{
     display: flex;
     border-radius: 5px;
     margin-top: 20px;
-
-
+    /* width: 900%; */
+    width: calc(100% - 65px);
     /* position: absolute;  */
     top: 0px; /* Align to the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Stretch to the right */
-    padding: 10px; /* Add padding */
+    left: 0px; /* Align to the left */
+    right: 0px; /* Stretch to the right */
+    padding: 6px; /* Add padding */
     z-index: 10;
+    margin-left: 30px;
+    margin-right:30px ;
+    position: fixed;
 }
 
 
@@ -160,12 +175,7 @@ nav ul{
         transition: background-color 0.3s ease;
     }
 
-    .content{
-        color: aliceblue;
-        background-color: #1A2456;
-
-      
-    }
+ 
 
     /* making the landing page text fade away on scroll */
 
@@ -208,38 +218,60 @@ nav ul{
 
 
 .grid-container{
-display: grid;
 background: #EFC2B3;
 color:black;
 margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+display:flex;
+/* grid-template-columns: repeat(2, 1fr); */
+width: 100%;
+text-align: center;
+
+/* z-index: 2;  */
+
+}
+
+
+
+.grid-container .first {
+    /* background: teal; */
+    color: aliceblue;
+    text-align: center;
+    border: 1px solid ; 
+    margin-top: 10px;
+    gap: 0;
+    padding:  90px 20px 100px;
+    width: 100%;
+    
+  }
+  
+.grid-container .first h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 5vh;
+  }
+  
+  
+  .grid-container  p {
+ color: #1A2456;
+ font-size: 3.5vh;
+ font-weight: 50;
       }
+  
+
+       .body{
+        overflow: hidden;
+        height: 100%;
+    
+    }  
+
+
+  
 
 
 
-.grid_container > div {
-        background: teal;
+    /* .content{
         color: aliceblue;
-        text-align: center;
-        padding: 20px;
-        border: 1px solid ; 
-      }
+        background-color: #1A2456;
+
       
-
-.img1{
-   
-}
-.picha1{
-    background-image: url("") ;
-}
-
-
-
-      .grid_container > div:nth-child(1){
-        grid-column: 1 / span 3;
-      }
-      
-      /* .grid_container > div:nth-child(5){
-        grid-column: span 3;
-      }  */
+    } */
