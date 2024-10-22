@@ -302,9 +302,9 @@ text-align: center;
     }
     .left {
         background-color: #1A2456;
-        height: 100vh; /* Optional: Set height for the left section */
+        height: 200vh; /* Optional: Set height for the left section */
     }
-    
+    /* left image */
     .bg-image {
         margin-top: 10px;
         width: 100%; /* Adjust the width as needed */
@@ -312,18 +312,60 @@ text-align: center;
         background-image: url("https://monogramcc.com/static/543e621f4ce0ec2dd66bab1eb962a368/03128/master-left-alt.webp");
         background-size: cover;
         background-position: center;
-        margin-left: 20px;
+        margin-left: 19px;
         margin-right: 0;
     }
+/* left image */
 
-    .bg-imagee {
+    .bg-image2 {
+        margin-top: 24px;
+        width: 100%; /* Adjust the width as needed */
+        height: 200px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
+        background-size: cover;
+        background-position: center;
+        margin-left:-22px;
+        margin-bottom: 210px;
+    }
+    
+    .L-text{
+        background-color: #EFC2B3;
+        padding: 20px; /* Add some padding around the text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 600px; /* Limit the width */
+    }
+    
+    .L-text h1 {
+        font-size: 1.5rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+    
+    .L-text p {
+        font-size: 1rem; /* Regular font size */
+        line-height: 1.5; /* Increase line height for readability */
+        color: #1A2456; /* Darker text color for better contrast */
+        text-align: justify; /* Justify text for a cleaner look */
+        margin-bottom: 100px;    
+    }
+
+    .bg-image3 {
+        
         margin-top: 10px;
         width: 100%; /* Adjust the width as needed */
         height: 240px; /* Set a height for the image container */
         background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
         background-size: cover;
         background-position: center;
-        margin-left:-10;
-
+        padding: 20px;
+        margin-left: -22px;
+        
     }
-    
+
+    .green{
+        background-color: #5A7F71;
+        margin-bottom: 100px;
+        height: 84vh;
+    }
