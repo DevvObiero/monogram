@@ -226,7 +226,6 @@ display:flex;
 width: 100%;
 text-align: center;
 
-/* z-index: 2;  */
 
 }
 
@@ -275,3 +274,27 @@ text-align: center;
 
       
     } */
+
+    
+    .secsion {
+      display: flex;
+    }
+  
+    .left, .right {
+      width: 50%;
+    }
+  
+    .inner {
+      padding: 20px;
+    }
+  
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+  
+    .text-center {
+      text-align: center;
+    }
+  
+  
