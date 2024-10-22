@@ -1,22 +1,29 @@
-window.addEventListener('scroll', () => {
-    const textt = document.querySelector('.text');
-    const scrollPosition = window.scrollY;
+
+
+
+
+window.addEventListener('scroll', function() {
+  const leftDiv = document.querySelector('.left');
+  const rightDiv = document.querySelector('.right');
   
-    // Trigger the scroll effect only within the first 200px of scrolling
-    if (scrollPosition < 200) {
-      textt.classList.add('scrolled');
-      
-      // Prevent page from scrolling while text is still fading
-      window.scrollTo(0, 0);
-    } else {
-      textt.classList.remove('scrolled');
-      
-      // After the fade-out animation is done, allow the page to scroll
-      window.removeEventListener('scroll', scrollLock);
-    }
-  });
+  // Get the scroll position of the window
+  const scrollY = window.scrollY;
   
-  function scrollLock() {
-    window.scrollTo(0, 0); // Lock the scroll
+  // Define scroll threshold values
+  const leftScrollThreshold = 200;  // When the left section becomes fixed
+  const rightScrollThreshold = 800; // When the right section becomes fixed
+  
+  // Make left static/fixed based on scroll
+  if (scrollY >= leftScrollThreshold && scrollY < rightScrollThreshold) {
+    leftDiv.classList.add('fixed');
+  } else {
+    leftDiv.classList.remove('fixed');
   }
-  
+
+  // Make right static/fixed based on scroll
+  if (scrollY >= rightScrollThreshold) {
+    rightDiv.classList.add('fixed');
+  } else {
+    rightDiv.classList.remove('fixed');
+  }
+})

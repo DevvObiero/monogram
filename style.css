@@ -225,7 +225,7 @@ display:flex;
 /* grid-template-columns: repeat(2, 1fr); */
 width: 100%;
 text-align: center;
-
+height: 90vh;
 
 }
 
@@ -299,6 +299,7 @@ text-align: center;
   
     .right{
         background-color: #FF8D6B;
+        margin-bottom:10000px;
     }
     .left {
         background-color: #1A2456;
@@ -306,36 +307,57 @@ text-align: center;
     }
     /* left image */
     .bg-image {
-        margin-top: 10px;
+        margin-top: -50px;
         width: 100%; /* Adjust the width as needed */
-        height: 240px; /* Set a height for the image container */
+        height: 350px; /* Set a height for the image container */
         background-image: url("https://monogramcc.com/static/543e621f4ce0ec2dd66bab1eb962a368/03128/master-left-alt.webp");
         background-size: cover;
         background-position: center;
         margin-left: 19px;
         margin-right: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 42px;
+    }
+
+    @media (min-width: 768px) {
+        .bg-image {
+            margin-left: 79px;
+            height: 600px; /* Adjust the height for larger screens */
+        }
     }
 /* left image */
-
+/* right image */
     .bg-image2 {
-        margin-top: 24px;
+        margin-top: -54px;
         width: 100%; /* Adjust the width as needed */
-        height: 200px; /* Set a height for the image container */
+        height: 355px; /* Set a height for the image container */
         background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
         background-size: cover;
         background-position: center;
         margin-left:-22px;
         margin-bottom: 210px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-    
-    .L-text{
+    @media (min-width: 768px) {
+        .bg-image2 {
+            margin-left:-78px;
+            height: 600px; /* Adjust the height for larger screens */
+        }
+    }
+    /* right image */
+    .R-text{
+        margin-top: -100px;
         background-color: #EFC2B3;
         padding: 20px; /* Add some padding around the text */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 600px; /* Limit the width */
+        max-width: 6000px; /* Limit the width */
+        width: 100%;
+        margin-bottom: -116px;
     }
     
-    .L-text h1 {
+    .R-text h1 {
         font-size: 1.5rem; /* Increase font size for emphasis */
         color: #1A2456; /* Set a contrasting color */
         margin-bottom: 15px; /* Space between heading and paragraph */
@@ -343,12 +365,12 @@ text-align: center;
         margin-bottom: 40px;
     }
     
-    .L-text p {
+    .R-text p {
         font-size: 1rem; /* Regular font size */
         line-height: 1.5; /* Increase line height for readability */
         color: #1A2456; /* Darker text color for better contrast */
         text-align: justify; /* Justify text for a cleaner look */
-        margin-bottom: 100px;    
+        margin-bottom: 150px;    
     }
 
     .bg-image3 {
@@ -367,5 +389,16 @@ text-align: center;
     .green{
         background-color: #5A7F71;
         margin-bottom: 100px;
+        margin-top: 117px;
         height: 84vh;
+    }
+
+    .L-text{
+        margin-top: 900px;
+        background-color: #EFC2B3;
+        padding: 20px; /* Add some padding around the text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 6000px; /* Limit the width */
+        width: 100%;
+        height: 1000px; ;
     }
