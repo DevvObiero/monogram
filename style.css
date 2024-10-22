@@ -297,4 +297,33 @@ text-align: center;
       text-align: center;
     }
   
-  
+    .right{
+        background-color: #FF8D6B;
+    }
+    .left {
+        background-color: #1A2456;
+        height: 100vh; /* Optional: Set height for the left section */
+    }
+    
+    .bg-image {
+        margin-top: 10px;
+        width: 100%; /* Adjust the width as needed */
+        height: 240px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/543e621f4ce0ec2dd66bab1eb962a368/03128/master-left-alt.webp");
+        background-size: cover;
+        background-position: center;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .bg-imagee {
+        margin-top: 10px;
+        width: 100%; /* Adjust the width as needed */
+        height: 240px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
+        background-size: cover;
+        background-position: center;
+        margin-left:-10;
+
+    }
+    
