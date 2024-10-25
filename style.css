@@ -226,6 +226,7 @@ display:flex;
 width: 100%;
 text-align: center;
 height: 90vh;
+gap: none;
 
 }
 
@@ -259,6 +260,8 @@ height: 90vh;
        .body{
         overflow: hidden;
         height: 100%;
+        margin: 0;
+        gap: 0;
     
     }  
 
@@ -470,7 +473,7 @@ height: 90vh;
     .yellow{
         background-color: #F5B335;
         margin-top: 100px;
-        height: 195vh;
+        height: 1130px;
         margin-bottom: 180px;
     }
 
@@ -512,7 +515,53 @@ height: 90vh;
 
     .green2{
         background-color: #5A7F71;
-        margin-bottom: 100px;
+        /* margin-bottom: 10000px; */
         /* margin-top: 117px; */
-        height: 70vh;
+        height: 397px;
     }
+    .grid-container2{
+        color:bisque;
+        margin-top: -2750px;
+        display:flex;
+        /* grid-template-columns: repeat(2, 1fr); */
+        width: 100%;
+        text-align: center;
+        height: 90vh;
+        gap: none;
+        background-color: #1A2456;
+            
+          }
+          
+        
+          
+     
+
+        .grid-container2 .second {
+            /* background: teal; */
+            color: aliceblue;
+            text-align: center; 
+            margin-top: 10px;
+            gap: 0;
+            padding:  90px 20px 100px;
+            width: 100%;
+            
+          }
+          
+        .grid-container2 .second h2 {
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 5vh;
+            margin: 23px;
+            /* padding: 20px 20px 40px 40px; */
+            /* text-align: center; */
+            word-wrap: break-word;
+            color: #FFFFFF;
+            font-size: 7vh;
+          }
+          
+          
+          .grid-container2  p {
+         color: #1A2456;
+         font-size: 3.5vh;
+         font-weight: 50;
+              }

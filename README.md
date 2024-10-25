@@ -51,4 +51,5 @@ Inspired by the original Monogram website.
 Contact
 For questions or suggestions, feel free to reach out:
 
-Your Name: obieropauldev@gmail.com
+my Name: Paul Obiero
+my email: obieropauldev@gmail.com
