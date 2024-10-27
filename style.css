@@ -566,10 +566,18 @@ gap: none;
          font-size: 3.2vh;
          font-weight: 50;
               }
-
-
-              .second-image{
+              
+              .second-image {
                 background-image: url("https://monogramcc.com/static/4dc8d2c6b15bccecb86f7c85e6669f6b/811c7/core-top.webp");
                 background-size: cover;
                 background-position: center;
+                /* margin-left:-22px; */
+                margin-bottom: 210px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 300px;
+                margin-top: 10px;
+                align-self: center;
             }
+            
