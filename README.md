@@ -1,4 +1,5 @@
 https://monogramy.netlify.app
+<h1>its not responsive yet</h1>
 <h1>Monogram Website Duplication<h1>
 Project Overview
 This project is a responsive duplication of the Monogram website, built with HTML and CSS using CSS Grid for layout. The goal is to practice modern web design techniques, ensuring mobile responsiveness and clean design aesthetics.
