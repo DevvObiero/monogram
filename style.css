@@ -556,12 +556,13 @@ gap: none;
             /* text-align: center; */
             word-wrap: break-word;
             color: #FFFFFF;
-            font-size: 7vh;
+            font-size: 
+            7vh;
           }
           
           
           .grid-container2  p {
          color: #1A2456;
-         font-size: 3.5vh;
+         font-size: 3.2vh;
          font-weight: 50;
               }
