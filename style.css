@@ -7,19 +7,6 @@
     font-style: normal;
 }
 
-/* body {
-    font-family: 'Shrimp Sans Serif',Roboto,sans-serif;
-    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp'); 
-    height: 100vh; 
-    background-size: 120%; 
-    background-position: center;
-    background-size: cover;
-    background-repeat:  no-repeat;
-    width: 100%;
-   
-}
- */
-
 
 
 
@@ -215,370 +202,55 @@ nav ul{
       }
 
 
-
-
-.grid-container{
-background: #EFC2B3;
-color:black;
-margin: 0 auto;
-display:flex;
-/* grid-template-columns: repeat(2, 1fr); */
-width: 100%;
-text-align: center;
-height: 90vh;
-gap: none;
-
+.parent1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    height: 100vh;
+    margin: 0;
 }
 
-
-
-.grid-container .first {
-    /* background: teal; */
-    color: aliceblue;
-    text-align: center; 
-    margin-top: 10px;
-    gap: 0;
-    padding:  90px 20px 100px;
-    width: 100%;
-    
-  }
-  
-.grid-container .first h2 {
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 5vh;
-  }
-  
-  
-  .grid-container  p {
- color: #1A2456;
- font-size: 3.5vh;
- font-weight: 50;
-      }
-  
-
-       .body{
-        overflow: hidden;
-        height: 100%;
-        margin: 0;
-        gap: 0;
-    
-    }  
-
-
-  
-
-
-
-    /* .content{
-        color: aliceblue;
-        background-color: #1A2456;
-
-      
-    } */
-
-    
-    .secsion {
-      display: flex;
-    }
-  
-    .left, .right {
-      width: 50%;
-    }
-  
-    .inner {
-      padding: 20px;
-      padding-bottom: -200px;
-    }
-  
-    .sticky {
-      position: sticky;
-      top: 0;
-    }
-  
-    .text-center {
-      text-align: center;
-    }
-  
-    .right{
-        margin-bottom:5000px;
-        background-color: #FF8D6B;
-        height: 210vh;
-       
-    }
-    .left {
-        background-color: #1A2456;
-        height: 210vh; /* Optional: Set height for the left section */
-    }
-    /* left image */
-    .bg-image {
-        margin-top: -50px;
-        width: 100%; /* Adjust the width as needed */
-        height: 350px; /* Set a height for the image container */
-        background-image: url("https://monogramcc.com/static/543e621f4ce0ec2dd66bab1eb962a368/03128/master-left-alt.webp");
-        background-size: cover;
-        background-position: center;
-        margin-left: 19px;
-        margin-right: 0;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-bottom: 42px;
-    }
-
-    @media (min-width: 768px) {
-        .bg-image {
-            margin-left: 79px;
-            height: 600px; /* Adjust the height for larger screens */
-        }
-    }
-/* left image */
-/* right image */
-    .bg-image2 {
-        margin-top: -54px;
-        width: 100%; /* Adjust the width as needed */
-        height: 355px; /* Set a height for the image container */
-        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
-        background-size: cover;
-        background-position: center;
-        margin-left:-22px;
-        margin-bottom: 210px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    @media (min-width: 768px) {
-        .bg-image2 {
-            margin-left:-78px;
-            height: 600px; /* Adjust the height for larger screens */
-        }
-    }
-    /* right image */
-    .R-text{
-        margin-top: -100px;
-        background-color: #EFC2B3;
-        padding: 20px; /* Add some padding around the text */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 6000px; /* Limit the width */
-        width: 100%;
-        margin-bottom: -116px;
-        padding-bottom:70PX ;
-    }
-    
-    .R-text h1 {
-        font-size: 1.5rem; /* Increase font size for emphasis */
-        color: #1A2456; /* Set a contrasting color */
-        margin-bottom: 15px; /* Space between heading and paragraph */
-        text-align: center; /* Center the heading */
-        margin-bottom: 40px;
-    }
-    
-    .R-text p {
-        font-size: 1rem; /* Regular font size */
-        line-height: 1.5; /* Increase line height for readability */
-        color: #1A2456; /* Darker text color for better contrast */
-        text-align: justify; /* Justify text for a cleaner look */
-        margin-bottom: 0px;    
-    }
-
-    .bg-image3 {
-        
-        margin-top: 180px;
-        width: 100%; /* Adjust the width as needed */
-        height: 240px; /* Set a height for the image container */
-        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        margin-left: -22px;
-        
-    }
-
-    .green{
-        background-color: #5A7F71;
-        margin-bottom: 100px;
-        margin-top: 117px;
-        height: 200vh;
-    }
-
-    .L-text{
-        margin-top:860px;
-        background-color: #EFC2B3;
-        padding: 20px; /* Add some padding around the text */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 600px; /* Limit the width */
-        width: 100%;
-        height: 400px; ;
-    }
-
-    .L-text h1{
-        font-size: 1.5rem; /* Increase font size for emphasis */
-        color: #1A2456; /* Set a contrasting color */
-        margin-bottom: 15px; /* Space between heading and paragraph */
-        text-align: center; /* Center the heading */
-        margin-bottom: 40px;
-    }
-    .L-text p{
-        font-size: 1rem; /* Increase font size for emphasis */
-        color: #1A2456; /* Set a contrasting color */
-        margin-bottom: 15px; /* Space between heading and paragraph */
-        text-align: center; /* Center the heading */
-        margin-bottom: 40px;
-    }
-
-    .orange{
-        background-color: #FF8D6B;
-        /* margin-bottom: 100px; */
-        margin-top: 0px;
-        height: 180vh;
-
-    }
-
-    .bg-image4 {
-        
-        margin-top: -15px;
-        width: 100%; /* Adjust the width as needed */
-        height: 240px; /* Set a height for the image container */
-        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        margin-left: 59px;
-    }
-
-    .R-text2{
-        margin-top: -100px;
-        background-color: #EFC2B3;
-        padding: 20px; /* Add some padding around the text */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 6000px; /* Limit the width */
-        width: 100%;
-        margin-bottom: -116px;
-    }
-    
-    .R-text2 h1 {
-        font-size: 1.5rem; /* Increase font size for emphasis */
-        color: #1A2456; /* Set a contrasting color */
-        margin-bottom: 15px; /* Space between heading and paragraph */
-        text-align: center; /* Center the heading */
-        margin-bottom: 40px;
-    }
-    
-    .R-text2 p {
-        font-size: 1rem; /* Regular font size */
-        line-height: 1.5; /* Increase line height for readability */
-        color: #1A2456; /* Darker text color for better contrast */
-        text-align: justify; /* Justify text for a cleaner look */
-        margin-bottom: 0px;   
-        padding-bottom:60px ;
-    }
-    .yellow{
-        background-color: #F5B335;
-        margin-top: 100px;
-        height: 1130px;
-        margin-bottom: 180px;
-    }
-
-    .bg-image5{
-        
-        margin-top: -15px;
-        width: 100%; /* Adjust the width as needed */
-        height: 240px; /* Set a height for the image container */
-        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        margin-left: -22px;
-    }
-    .L-text2{
-        margin-top:0px;
-        background-color: #EFC2B3;
-        padding: 20px; /* Add some padding around the text */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 600px; /* Limit the width */
-        width: 100%;
-        height: 400px; ;
-    }
-
-    .L-text2 h1{
-        font-size: 1.5rem; /* Increase font size for emphasis */
-        color: #1A2456; /* Set a contrasting color */
-        margin-bottom: 15px; /* Space between heading and paragraph */
-        text-align: center; /* Center the heading */
-        margin-bottom: 40px;
-    }
-    .L-text2 p{
-        font-size: 1rem; /* Increase font size for emphasis */
-        color: #1A2456; /* Set a contrasting color */
-        margin-bottom: 15px; /* Space between heading and paragraph */
-        text-align: center; /* Center the heading */
-        margin-bottom: 40px;
-    }
-
-    .green2{
-        background-color: #5A7F71;
-        /* margin-bottom: 10000px; */
-        /* margin-top: 117px; */
-        height: 397px;
-    }
-    
-   
- .grid-container2 {
-    color: bisque;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-    background-color: #1A2456;
-    text-align: center;
-}
-
-.grid-container2 .second {
-    display: flex;
-    flex-direction: column; /* Stack heading on top of content */
-    align-items: center;
-    color: aliceblue;
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    background-color: #EFC2B3;
     padding: 20px;
-    width: 80%; /* Adjust width as needed */
-}
-
-#scrollText {
-    font-weight: bold;
-    font-size: 5vh;
-    margin-bottom: 30px;
-    color: #FFFFFF;
-}
-
-/* Flex container for the image and text */
-.content-container {
+    height: 100%;
     display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
     justify-content: center;
+    align-items: center; 
 }
 
-.second-text {
-    width: 50%; /* Adjust to control text width */
-    text-align: left;
-    color: #FFFFFF;
+.div1 h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    
+}
+.div1 p {
+    font-size: 1.2rem;
+    color: #1A2456;
+    text-align: center;
+    margin-top: 30px;
+    width: 60%;
 }
 
-.second-text h2 {
-    font-weight: bold;
-    font-size: 4vh;
-    margin-bottom: 10px;
+.content {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
 }
 
-.second-text p {
-    color:bisque;
-    font-size: 2.5vh;
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Use transition instead of animation */
 }
 
-.second-image {
-    background-image: url("https://monogramcc.com/static/4dc8d2c6b15bccecb86f7c85e6669f6b/811c7/core-top.webp");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 300px;
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

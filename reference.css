@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'Shrimp Sans Serif';
+    src: url('fonts/shrimp-sans-serif.woff2') format('woff2'),
+         url('fonts/shrimp-sans-serif.woff') format('woff'),
+         url('fonts/shrimp-sans-serif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body {
+    font-family: 'Shrimp Sans Serif',Roboto,sans-serif;
+    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp'); 
+    height: 100vh; 
+    background-size: 120%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    width: 100%;
+   
+}
+ */
+
+
+
+
+ body {
+    font-family: 'Shrimp Sans Serif',Roboto,sans-serif;
+    background-image: url('https://monogramcc.com/static/3087a8d7656dfbfca1bb710835289def/b7f32/home_hero_dark_a5ec9a89de.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+
+
+
+
+nav{
+    background-color:#1A2456 ;
+    /* padding: 0.5rem 1rem; */
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* width: 900%; */
+    width: calc(100% - 65px);
+    /* position: absolute;  */
+    top: 0px; /* Align to the top */
+    left: 0px; /* Align to the left */
+    right: 0px; /* Stretch to the right */
+    padding: 6px; /* Add padding */
+    z-index: 10;
+    margin-left: 30px;
+    margin-right:30px ;
+    position: fixed;
+}
+
+
+nav:hover{
+    background-color: rgba(26, 36, 86, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.logo svg{
+    height: 38px;
+    color:  #EFC2B3;
+}
+.logo svg:hover{
+    height: 38px;
+    color:  #ff8b68;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+.nav-links li{
+    margin:0 15px ;
+    font-weight: 100;
+    position: relative;
+    font-size: 14px;
+ }
+
+    .nav-links li a{
+        color: #EFC2B3;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover{
+        color: #ff8b68 ;
+        transition: color 0.3s ease;
+    }
+
+
+    .text {
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        height: 100vh; /* Full viewport height */
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Space between elements */
+        text-align: center; /* Center text alignment */
+        color: #EFC2B3; /* Text color for all text inside the container */
+        z-index: 1; /* Ensure it's in front of the background */
+    }
+    
+    .hero-title1 {
+        font-size: 2rem; /* Adjust as needed */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+    }
+    .hero-title2 {
+        font-size: 4.5rem; /* Adjust as needed */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+    }
+    
+    /* Additional styles for <p> element */
+    .text p {
+        font-size: 1.5rem; /* Adjust the size as needed */
+        color: #EFC2B3; /* Ensure it matches the other text colors */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional shadow for visibility */
+    }
+
+    .btns{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .hero-btn{
+        background-color: #EFC2B3 ;
+        color: black;
+        padding: 20px;
+        width: 210px;
+        text-align: center;
+        gap: 20px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-family: 'Shrimp Sans Serif';
+    
+    }
+
+    .hero-btn:hover{
+        background-color: #f1ae9a ;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+ 
+
+    /* making the landing page text fade away on scroll */
+
+    .text{
+        opacity: 1;
+        transform: translateY(50px) scale(1);
+        transition: transform 2s, opacity 2s;  /*this makes it look like inatoka chini*/
+    }
+
+    .text.scrolled{
+        transform: translateY(-50px) scale(0.7);
+        opacity: 0;
+     
+    }
+
+    .scroll-indicator {
+    position: absolute;
+    bottom: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+  font-size: 3rem; /* Size of the icon */
+  color: #EFC2B3;    /* Color of the icon */
+  cursor: pointer;
+  animation: bounce 2s infinite;
+    }
+    /* Animation for the scroll indicator */
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0) translateX(-50%);
+        }
+        40% {
+          transform: translateY(15px) translateX(-50%);
+        }
+        60% {
+          transform: translateY(10px) translateX(-50%);
+        }
+      }
+
+
+
+
+.grid-container{
+background: #EFC2B3;
+color:black;
+margin: 0 auto;
+display:flex;
+/* grid-template-columns: repeat(2, 1fr); */
+width: 100%;
+text-align: center;
+height: 90vh;
+gap: none;
+
+}
+
+
+
+.grid-container .first {
+    /* background: teal; */
+    color: aliceblue;
+    text-align: center; 
+    margin-top: 10px;
+    gap: 0;
+    padding:  90px 20px 100px;
+    width: 100%;
+    
+  }
+  
+.grid-container .first h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 5vh;
+  }
+  
+  
+  .grid-container  p {
+ color: #1A2456;
+ font-size: 3.5vh;
+ font-weight: 50;
+      }
+  
+
+       .body{
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        gap: 0;
+    
+    }  
+
+
+  
+
+
+
+    /* .content{
+        color: aliceblue;
+        background-color: #1A2456;
+
+      
+    } */
+
+    
+    .secsion {
+      display: flex;
+    }
+  
+    .left, .right {
+      width: 50%;
+    }
+  
+    .inner {
+      padding: 20px;
+      padding-bottom: -200px;
+    }
+  
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+  
+    .text-center {
+      text-align: center;
+    }
+  
+    .right{
+        margin-bottom:5000px;
+        background-color: #FF8D6B;
+        height: 210vh;
+       
+    }
+    .left {
+        background-color: #1A2456;
+        height: 210vh; /* Optional: Set height for the left section */
+    }
+    /* left image */
+    .bg-image {
+        margin-top: -50px;
+        width: 100%; /* Adjust the width as needed */
+        height: 350px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/543e621f4ce0ec2dd66bab1eb962a368/03128/master-left-alt.webp");
+        background-size: cover;
+        background-position: center;
+        margin-left: 19px;
+        margin-right: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 42px;
+    }
+
+    @media (min-width: 768px) {
+        .bg-image {
+            margin-left: 79px;
+            height: 600px; /* Adjust the height for larger screens */
+        }
+    }
+/* left image */
+/* right image */
+    .bg-image2 {
+        margin-top: -54px;
+        width: 100%; /* Adjust the width as needed */
+        height: 355px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
+        background-size: cover;
+        background-position: center;
+        margin-left:-22px;
+        margin-bottom: 210px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @media (min-width: 768px) {
+        .bg-image2 {
+            margin-left:-78px;
+            height: 600px; /* Adjust the height for larger screens */
+        }
+    }
+    /* right image */
+    .R-text{
+        margin-top: -100px;
+        background-color: #EFC2B3;
+        padding: 20px; /* Add some padding around the text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 6000px; /* Limit the width */
+        width: 100%;
+        margin-bottom: -116px;
+        padding-bottom:70PX ;
+    }
+    
+    .R-text h1 {
+        font-size: 1.5rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+    
+    .R-text p {
+        font-size: 1rem; /* Regular font size */
+        line-height: 1.5; /* Increase line height for readability */
+        color: #1A2456; /* Darker text color for better contrast */
+        text-align: justify; /* Justify text for a cleaner look */
+        margin-bottom: 0px;    
+    }
+
+    .bg-image3 {
+        
+        margin-top: 180px;
+        width: 100%; /* Adjust the width as needed */
+        height: 240px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-left: -22px;
+        
+    }
+
+    .green{
+        background-color: #5A7F71;
+        margin-bottom: 100px;
+        margin-top: 117px;
+        height: 200vh;
+    }
+
+    .L-text{
+        margin-top:860px;
+        background-color: #EFC2B3;
+        padding: 20px; /* Add some padding around the text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 600px; /* Limit the width */
+        width: 100%;
+        height: 400px; ;
+    }
+
+    .L-text h1{
+        font-size: 1.5rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+    .L-text p{
+        font-size: 1rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+
+    .orange{
+        background-color: #FF8D6B;
+        /* margin-bottom: 100px; */
+        margin-top: 0px;
+        height: 180vh;
+
+    }
+
+    .bg-image4 {
+        
+        margin-top: -15px;
+        width: 100%; /* Adjust the width as needed */
+        height: 240px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-left: 59px;
+    }
+
+    .R-text2{
+        margin-top: -100px;
+        background-color: #EFC2B3;
+        padding: 20px; /* Add some padding around the text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 6000px; /* Limit the width */
+        width: 100%;
+        margin-bottom: -116px;
+    }
+    
+    .R-text2 h1 {
+        font-size: 1.5rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+    
+    .R-text2 p {
+        font-size: 1rem; /* Regular font size */
+        line-height: 1.5; /* Increase line height for readability */
+        color: #1A2456; /* Darker text color for better contrast */
+        text-align: justify; /* Justify text for a cleaner look */
+        margin-bottom: 0px;   
+        padding-bottom:60px ;
+    }
+    .yellow{
+        background-color: #F5B335;
+        margin-top: 100px;
+        height: 1130px;
+        margin-bottom: 180px;
+    }
+
+    .bg-image5{
+        
+        margin-top: -15px;
+        width: 100%; /* Adjust the width as needed */
+        height: 240px; /* Set a height for the image container */
+        background-image: url("https://monogramcc.com/static/1feefab9ca9d660696dbdd786a9b78df/7fc20/custom-right.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-left: -22px;
+    }
+    .L-text2{
+        margin-top:0px;
+        background-color: #EFC2B3;
+        padding: 20px; /* Add some padding around the text */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        max-width: 600px; /* Limit the width */
+        width: 100%;
+        height: 400px; ;
+    }
+
+    .L-text2 h1{
+        font-size: 1.5rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+    .L-text2 p{
+        font-size: 1rem; /* Increase font size for emphasis */
+        color: #1A2456; /* Set a contrasting color */
+        margin-bottom: 15px; /* Space between heading and paragraph */
+        text-align: center; /* Center the heading */
+        margin-bottom: 40px;
+    }
+
+    .green2{
+        background-color: #5A7F71;
+        /* margin-bottom: 10000px; */
+        /* margin-top: 117px; */
+        height: 397px;
+    }
+    
+   
+ .grid-container2 {
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #1A2456;
+    text-align: center;
+}
+
+.grid-container2 .second {
+    display: flex;
+    flex-direction: column; /* Stack heading on top of content */
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+}
+
+#scrollText {
+    font-weight: bold;
+    font-size: 5vh;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+/* Flex container for the image and text */
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.second-text {
+    width: 50%; /* Adjust to control text width */
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.second-text h2 {
+    font-weight: bold;
+    font-size: 4vh;
+    margin-bottom: 10px;
+}
+
+.second-text p {
+    color:bisque;
+    font-size: 2.5vh;
+}
+
+.second-image {
+    background-image: url("https://monogramcc.com/static/4dc8d2c6b15bccecb86f7c85e6669f6b/811c7/core-top.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 300px;
+}
