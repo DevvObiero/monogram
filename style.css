@@ -443,13 +443,4 @@ top: 0;
 }
 
 
-.parent2 .div2 {
-    grid-column: 2;
-    grid-row: 37 / span 6; /* First 6 rows */
-    background-color:#F5B335;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    padding: 0;
-}
+
