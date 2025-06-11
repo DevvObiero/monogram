@@ -258,9 +258,9 @@ nav ul{
 .parent2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(18, 1fr); /* 18 rows for 3 divs (6 rows each) */
+    grid-template-rows: repeat(36, 1fr); /* 18 rows for 3 divs (6 rows each) */
     gap: 0px;
-    height: 300vh; /* Make parent tall to allow scrolling */
+    height: 600vh; /* Make parent tall to allow scrolling */
     margin: 0;
     padding: 0;
 }
@@ -300,10 +300,10 @@ nav ul{
 
 .parent2 .div4 {
     grid-column: 2;
-    grid-row: 13 / span 6; /* Last 6 rows */
-    background-color: #FF8D6B;
+    grid-row: 13 / span 18; /* Last 6 rows */
+    background-color: #5A7F71;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-starts;
     align-items: center;
     height: 100%;
     padding: 0;
@@ -311,7 +311,7 @@ nav ul{
 
 .parent2 .div1 img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     object-fit: cover;
     margin-right: 0;
@@ -319,11 +319,12 @@ nav ul{
     top: 0; /* Stick to top of viewport */
 }
 
+.parent2 .div7 img,
 .parent2 .div2 img,
 .parent2 .div3 img,
 .parent2 .div4 img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     object-fit: cover;
 }
@@ -341,7 +342,7 @@ nav ul{
 }
 
 .div3 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     text-align: center;
     
@@ -354,10 +355,65 @@ nav ul{
     width: 60%;
 }
 /* image alignments  sesciooonn  */
-.div4 img{
-    margin-top: -140px;
+.div2 img{
+    margin-top: -30px;
 }
 
-.div2 img{
-    margin-top: -140px;
+
+.div4 img{
+    margin-top: -1400px;
+}
+
+.parent2 .div4 img{
+    position: sticky ;
+top: 0;
+}
+
+
+
+.parent2 .div6 {
+    grid-column: 1;
+    grid-row: 19 / span 6; /* Next 6 rows */
+    background-color: #EFC2B3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.parent2 .div7{
+      grid-column: 1;
+    grid-row: 25 / span 6; /* Next 6 rows */
+    background-color: #FF8D6B;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 0; 
+}
+.parent2 .div8{
+      grid-column: 1;
+    grid-row: 31 / span 6; /* Next 6 rows */
+    background-color: #EFC2B3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0; 
+}
+
+
+.div6 h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    
+}
+.div6 p {
+    font-size: 1.2rem;
+    color: #1A2456;
+    text-align: center;
+    margin-top: 30px;
+    width: 60%;
 }
