@@ -254,3 +254,110 @@ nav ul{
     opacity: 1;
     transform: translateY(0);
 }
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(18, 1fr); /* 18 rows for 3 divs (6 rows each) */
+    gap: 0px;
+    height: 300vh; /* Make parent tall to allow scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+.parent2 .div1 {
+    grid-column: 1;
+    grid-row: 1 / span 18; /* Span all rows to match parent height */
+    background-color: #1A2456;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Align image container to top for sticky */
+    height: 100%;
+    padding: 0;
+}
+
+.parent2 .div2 {
+    grid-column: 2;
+    grid-row: 1 / span 6; /* First 6 rows */
+    background-color: #FF8D6B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.parent2 .div3 {
+    grid-column: 2;
+    grid-row: 7 / span 6; /* Next 6 rows */
+    background-color: #EFC2B3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.parent2 .div4 {
+    grid-column: 2;
+    grid-row: 13 / span 6; /* Last 6 rows */
+    background-color: #FF8D6B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.parent2 .div1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    position: sticky;
+    top: 0; /* Stick to top of viewport */
+}
+
+.parent2 .div2 img,
+.parent2 .div3 img,
+.parent2 .div4 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+.parent2 .div3 h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+
+.div3 h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    
+}
+.div3 p {
+    font-size: 1.2rem;
+    color: #1A2456;
+    text-align: center;
+    margin-top: 30px;
+    width: 60%;
+}
+/* image alignments  sesciooonn  */
+.div4 img{
+    margin-top: -140px;
+}
+
+.div2 img{
+    margin-top: -140px;
+}
